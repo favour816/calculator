@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/f1967cb664.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+       background-color:whitesmoke;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       min-height: 100dvh;
+       }
+        .container{
+          background-color: white;
+          padding: 2rem;
+          width: 30%;
+          border-radius: 10px;
+          box-shadow: 8px 8px 30px rgba(34, 34, 34, 0.26) ;
+        }
+        .container H4{
+            color:#444;
+            text-align: center;
+            font-size: 2rem;
+        }
+        input{
+            width: 97%;
+            height: 50px;
+            border-radius: 7px;
+            color: #444;
+            padding: 10px;
+            border: none;
+            box-shadow: 8px 8px 30px rgba(34, 34, 34, 0.26) ;
+        }
+        .divv{
+            width: 97%;
+            height: 50px;
+            background-color:whitesmoke;
+            align-content: center;
+            margin-top: 20px;
+            border-radius: 7px;
+            color: #444;
+            padding: 10px;
+            box-shadow: 8px 8px 30px rgba(34, 34, 34, 0.26) ;
+        }
+        .btn-group {
+         margin-top: 20px;
+         display: flex;
+         gap: .5rem;
+         align-items: center;
+        }
+        .ratings {
+         display:flex;
+         justify-content: center;
+         gap: .5rem;
+         font-size: 2rem;
+         margin-bottom: 2rem;
+}
+        .btn-group .submit-btn{
+         
+        background-color: black;
+        color: white;
+        padding: .75rem 1rem;
+        border-radius: .5rem;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        font-size: .875rem;
+        font-weight: 300;
+        }
+        .btn-group .submit-btn:hover{
+         background-color: white;
+         color: black;
+         box-shadow: 8px 8px 30px rgba(34, 34, 34, 0.26) ;
+        }
+        .btn-group .cancel-btn{
+        background-color:white;
+        color: black;
+        padding: .75rem 1rem;
+        border-radius: .5rem;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        font-size: .875rem;
+        font-weight: 300;
+        box-shadow: 8px 8px 30px rgba(34, 34, 34, 0.26) ;
+        }
+        .btn-group .cancel-btn:hover{
+          background-color:black; 
+          color: white; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <H4>Try dey read e get why</H4>
+          
+          <div class="ratings">
+          <i class="fa-solid fa-star star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star star" style="color: #FFD43B;"></i>
+          </div>
+          <input type="text" placeholder="Your Result" id="yourResult">
+          
+          <div class="divv" id="myScreen">See Grade</div>
+           <div class="btn-group">
+            <button onclick="show_grade()" class="submit-btn">Submit</button>
+            <button class="cancel-btn">Cancel</button>
+           </div>
+          </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
